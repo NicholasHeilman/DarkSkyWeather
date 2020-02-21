@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/current_weather"
+        android:background="@drawable/cloudy_background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.70" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hguide9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.20" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.40" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.60" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vguide9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/hguide3"
+            app:layout_constraintEnd_toStartOf="@+id/vguide3"
+            app:layout_constraintStart_toStartOf="@+id/vguide1"
+            app:srcCompat="@drawable/icon_cloudy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summary"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/hguide3"
+            app:layout_constraintStart_toStartOf="@+id/vguide3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTemperature"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature"
+            android:textStyle="bold"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toTopOf="@+id/hguide5"
+            app:layout_constraintStart_toStartOf="@+id/vguide1"
+            app:layout_constraintTop_toBottomOf="@+id/ivIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTemperatureHigh"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_high"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/hguide4"
+            app:layout_constraintStart_toStartOf="@+id/vguide6" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTemperatureLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_low"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/vguide6"
+            app:layout_constraintTop_toTopOf="@+id/hguide4" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/gvHourly"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:seriesData="0=1;.2=1.5;2=40;3=37"
+            app:seriesType="line"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
